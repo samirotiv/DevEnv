@@ -24,7 +24,7 @@ apt-get install nodejs -y
 npm install -g typescript
 
 # Vim Plug
-sudo chown -R $(whoami):$(whoami) ~
+chown -R $(whoami):$(whoami) ~
 curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-sudo chown -R $(whoami):$(whoami) ~
+chown -R $(whoami):$(whoami) ~
