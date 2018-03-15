@@ -1,3 +1,4 @@
+# ONLY STANDARD COMMANDS
 # Initial update
 apt update && apt upgrade -y
 apt-get install software-properties-common -y
@@ -22,9 +23,3 @@ pip3 install -r ./requirements3.txt
 # Node & Typescript
 apt-get install nodejs -y
 npm install -g typescript
-
-# Vim Plug
-chown -R $(whoami):$(whoami) ~
-curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-chown -R $(whoami):$(whoami) ~
