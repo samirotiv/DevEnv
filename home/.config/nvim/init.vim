@@ -23,7 +23,7 @@ endif
 
 Plug 'zchee/deoplete-jedi'
 Plug 'tweekmonster/deoplete-clang2'
-Plug 'mhartington/nvim-typescript'
+Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
 
 " LINTING
 Plug 'neomake/neomake'
