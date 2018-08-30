@@ -18,7 +18,7 @@ ln -s /usr/bin/nvim /usr/local/bin/vim
 
 # Python Prerequisites
 apt-get install python-dev python-pip python3-dev python3-pip -y
-pip3 install -r ./requirements3.txt
+pip3 install -U -r ./requirements3.txt
 
 # Node & Typescript
 apt-get install nodejs -y
