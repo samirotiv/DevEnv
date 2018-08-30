@@ -22,4 +22,4 @@ pip3 install -r ./requirements3.txt
 
 # Node & Typescript
 apt-get install nodejs -y
-npm install -g typescript
+npm install -g typescript neovim
