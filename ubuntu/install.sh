@@ -1,7 +1,7 @@
 # ONLY STANDARD COMMANDS
 # Initial update
 apt update && apt upgrade -y
-apt-get install software-properties-common -y
+apt-get install software-properties-common curl -y
 
 # Add Neo Repo
 add-apt-repository ppa:neovim-ppa/stable -y
