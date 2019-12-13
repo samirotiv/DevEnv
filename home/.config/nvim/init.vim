@@ -8,6 +8,11 @@ Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'altercation/vim-colors-solarized'
 Plug 'jistr/vim-nerdtree-tabs'
+Plug 'airblade/vim-gitgutter'
+Plug 'zivyangll/git-blame.vim'
+Plug 'itchyny/lightline.vim'
+Plug 'itchyny/vim-gitbranch'
+
 
 " LANGUAGE SPECIFIC SYNTAX
 Plug 'HerringtonDarkholme/yats.vim'
@@ -76,6 +81,7 @@ set background=light
 "let g:solarized_contrast="high"
 let g:solarized_visibility="high"
 colorscheme solarized
+highlight NERDTreeFile ctermfg=10
 
 " YOUCOMPLETEME
 "let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/global_ycm_extra_conf.py"
@@ -95,6 +101,22 @@ map <C-n> :NERDTreeTabsToggle<CR>
 let NERDTreeIgnore = ['\.pyc$']
 let g:NERDTreeMouseMode=2
 
+
+" GIT BLAME KEY REMAP for <LEADER>l (Leader = \)
+nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
+
+
+" Lightline
+let g:lightline = {
+      \ 'colorscheme': 'solarized',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'gitbranch#name'
+      \ },
+      \ }
 
 
 " Syntastic
