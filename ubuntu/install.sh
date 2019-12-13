@@ -8,7 +8,7 @@ add-apt-repository ppa:neovim-ppa/stable -y
 apt-get update
 
 # Install NodeJS
-curl -sL https://deb.nodesource.com/setup_8.x -o /tmp/nodesource_setup.sh
+curl -sL https://deb.nodesource.com/setup_10.x -o /tmp/nodesource_setup.sh
 bash /tmp/nodesource_setup.sh
 
 # Basics
