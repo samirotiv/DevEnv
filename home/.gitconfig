@@ -1,0 +1,6 @@
+
+[includeIf "gitdir:~/github/"]
+    path = ~/github/.gitconfig_include
+
+[includeIf "gitdir:~/git/"]
+    path = ~/git/.gitconfig_include
